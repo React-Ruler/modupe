@@ -1,0 +1,149 @@
+@import "../node_modules/bulma/bulma.sass";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Typography Variables */
+$family-sans-serif: "Poppins", sans-serif;
+$family-primary: $family-sans-serif;
+
+/* Color Variables */
+$--body-color: #11101d;
+$--white-color: #fff;
+$--logo-bg-color: #f3ec78;
+$--logo-bg-gradient-color: #af4261;
+$--box-color: #0d0f26;
+$--heading-color: #222321;
+$--form-placeholder-color: #c4c9c1;
+
+/* Card Variable */
+
+* {
+  font-family: $family-primary !important;
+  background-color: $--body-color !important;
+  color: $--white-color !important;
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 2rem !important;
+}
+
+.navbar-brand {
+  .navbar-item {
+    .logo__gradient {
+      background-color: $--logo-bg-color !important;
+      background-image: linear-gradient(
+        45deg,
+        $--logo-bg-color,
+        $--logo-bg-gradient-color
+      ) !important;
+      background-size: 100% !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+  }
+}
+
+.navbar-burger span {
+  background-color: $--white-color !important;
+}
+
+p.subtitle {
+  .modupe__gradient {
+    background-color: $--logo-bg-color !important;
+    background-image: linear-gradient(
+      45deg,
+      $--logo-bg-color,
+      $--logo-bg-gradient-color
+    ) !important;
+    background-size: 100% !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+}
+
+.heading__text {
+  color: $--heading-color !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+.btn {
+  background: linear-gradient(
+    45deg,
+    $--logo-bg-color,
+    $--logo-bg-gradient-color
+  ) !important;
+  background-size: 100% !important;
+  color: $--white-color !important;
+  font-size: 0.97rem !important;
+  border-radius: 0.4rem !important;
+  margin-top: 1rem !important;
+}
+
+.box {
+  h2 {
+    font-size: 1.1rem !important;
+    background-color: transparent !important;
+    margin: 0.5rem 0 !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+    background-color: transparent !important;
+  }
+}
+
+.box__bg {
+  background: linear-gradient(
+    45deg,
+    $--logo-bg-color,
+    $--logo-bg-gradient-color
+  ) !important;
+  background-size: 100% !important;
+  color: $--white-color !important;
+  font-size: 0.97rem !important;
+  border-radius: 0.4rem !important;
+  margin-top: 1rem !important;
+}
+
+.project__box {
+  background: $--heading-color !important;
+  padding: 20px 10px !important;
+  border-radius: 0.4rem !important;
+  width: 200px !important;
+}
+
+.icon__spacing {
+  margin: 10px !important;
+}
+
+.portfolio__radius {
+  border-radius: 1rem !important;
+}
+
+.input,
+.textarea {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0.4rem !important;
+  color: $--white-color !important;
+  background: $--box-color !important;
+  font-size: 0.9rem !important;
+  resize: none !important;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: $--form-placeholder-color !important;
+}
+
+.has-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .is-size-1-desktop {
+    font-size: 5rem !important;
+  }
+}
